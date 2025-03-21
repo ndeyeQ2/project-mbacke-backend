@@ -1,0 +1,10 @@
+# Ignorer les fichiers système
+.DS_Store
+*.log
+*.bak
+# Ignorer les dossiers Node.js
+node_modules/
+# Ignorer les configurations personnelles
+.vscode/
+.gitconfig
+.env
