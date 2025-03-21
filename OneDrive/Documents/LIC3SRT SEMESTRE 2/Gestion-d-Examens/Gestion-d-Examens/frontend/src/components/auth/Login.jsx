@@ -8,19 +8,26 @@ const Login = () => {
         motDePasse: '',
         role: 'etudiant' // 'etudiant' ou 'enseignant'
     });
-    const url = '/api/etudiants/login';
+    const baseURL = import.meta.env.VITE_API_BASE_URL;
+    let url = `${baseURL}/api/etudiants/login`;
+
+    // let url = '/api/etudiants/login'; // ✅ Changement de const à let
     const [error, setError] = useState('');
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        if (Login.role === 'enseignant') {
-            url = '/api/enseignants/login';
+        
+        if (credentials.role === 'enseignant') { // ✅ Correction ici
+            // url = '/api/enseignants/login';
+            url = `${baseURL}/api/enseignants/login`;
         }
+
         const Login1 = {
             email: credentials.email,
             motDePasse: credentials.motDePasse,
         };
+
         try {
             const response = await axios.post(url, Login1);
             localStorage.setItem('token', response.data.token);
@@ -110,4 +117,4 @@ const Login = () => {
     );
 };
 
-export default Login; 
+export default Login;
