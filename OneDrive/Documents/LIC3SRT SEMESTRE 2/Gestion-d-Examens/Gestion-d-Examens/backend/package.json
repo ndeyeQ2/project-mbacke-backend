@@ -11,15 +11,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/raphaeldaj/ProjetSGBD.git"
+        "url": "git+https://github.com/ndeyeQ2/project-mbacke-backend.git"
     },
     "keywords": [
-        "elhianne"
+        "ndeye"
     ],
-    "author": "Niass",
+    "author": "FAYE",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/raphaeldaj/ProjetSGBD/issues"
+        "url": "https://github.com/ndeyeQ2/project-mbacke-backend/issues"
     },
     "dependencies": {
         "argon2": "^0.41.1",
@@ -46,6 +46,6 @@
         "nodemon": "^3.1.9",
         "sequelize-cli": "^6.0.0"
     },
-    "homepage": "https://github.com/raphaeldaj/ProjetSGBD#readme",
+    "homepage": "https://github.com/ndeyeQ2/project-mbacke-backend#readme",
     "type": "commonjs"
 }
